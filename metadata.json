@@ -1,0 +1,5 @@
+{
+  "name": "Neomorphic LED Switch",
+  "description": "A sleek, neomorphic light switch interface with interactive LED feedback.",
+  "requestFramePermissions": []
+}

@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  
+  /* Neomorphic specific colors */
+  --color-neo-bg: #e0e5ec;
+  --color-neo-shadow-dark: #a3b1c6;
+  --color-neo-shadow-light: #ffffff;
+  
+  /* Dark mode neomorphic */
+  --color-neo-dark-bg: #2d3436;
+  --color-neo-dark-shadow-dark: #23282a;
+  --color-neo-dark-shadow-light: #374042;
+}
+
+@layer base {
+  body {
+    @apply font-sans antialiased;
+  }
+}
+
+.neo-out {
+  box-shadow: 9px 9px 16px var(--color-neo-shadow-dark), 
+              -9px -9px 16px var(--color-neo-shadow-light);
+}
+
+.neo-in {
+  box-shadow: inset 9px 9px 16px var(--color-neo-shadow-dark), 
+              inset -9px -9px 16px var(--color-neo-shadow-light);
+}
+
+.neo-out-sm {
+  box-shadow: 4px 4px 8px var(--color-neo-shadow-dark), 
+              -4px -4px 8px var(--color-neo-shadow-light);
+}
+
+.neo-in-sm {
+  box-shadow: inset 4px 4px 8px var(--color-neo-shadow-dark), 
+              inset -4px -4px 8px var(--color-neo-shadow-light);
+}
+
+/* Dark variations */
+.neo-dark-out {
+  box-shadow: 9px 9px 16px var(--color-neo-dark-shadow-dark), 
+              -9px -9px 16px var(--color-neo-dark-shadow-light);
+}
+
+.neo-dark-in {
+  box-shadow: inset 9px 9px 16px var(--color-neo-dark-shadow-dark), 
+              inset -9px -9px 16px var(--color-neo-dark-shadow-light);
+}
